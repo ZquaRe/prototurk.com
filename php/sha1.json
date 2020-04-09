@@ -1,0 +1,45 @@
+{
+  "author": "Furkan Sezgin (ZquaRe) <furkan-sezgin@hotmail.com>",
+  "title": "PHP'de sha1() Fonksiyonu",
+  "name": "sha1",
+  "syntax": "sha1 ( string $str [, bool $raw_output = FALSE ] ) : string",
+  "description": "SHA-1, mesaj özeti olarak da bilinen 160-bit özet değeri üretir. Bir SHA-1 özet değeri genellikle 40 basamaklı bir onaltılık sayı olarak üretilir.",
+  "note": "Şifreleri saklamak için bu fonksiyonu kullanmanız önerilmez.",
+  "compatibilities": [
+    "php 4",
+    "php 5",
+    "php 7"
+  ],
+  "params": [
+    {
+      "name": "$str",
+      "type": "string",
+      "description": "Şifre girilecek alan",
+      "required": true
+    },
+    {
+      "name": "$raw_output",
+      "type": "boolean",
+      "description": "sha1 özeti, 20 bayt uzunluğunda ham ikil biçemli bir dizge olarak, aksi takdirde 40 haneli onaltılık bir sayı dizgesi olarak döner. FALSE öntanımlıdır.",
+      "default": "false",
+      "required": false
+    }
+  ],
+  "changelogs": [
+    {
+      "version": "5.0.0\t",
+      "description": "$raw_output alanı eklendi."
+    }
+  ],
+  "examples": [
+    {
+      "code": "<?php\necho sha1('sha1 fonksiyonu ile şifrelenecek metin.'); // Çıktı: 5fc1a2ccce88be9d0f3eb379ec8f6f0bfd0d8881\n?>",
+      "description": "En temel kullanımı aşağıdaki şekildedir.",
+      "title": "Örnekler"
+    }
+  ],
+  "return": {
+    "type": "string",
+    "text": "SHA-1, mesaj özeti olarak da bilinen 160-bit özet değeri üretir. Bir SHA-1 özet değeri genellikle 40 basamaklı bir onaltılık sayı olarak üretilir."
+  }
+}
